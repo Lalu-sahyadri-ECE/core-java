@@ -1,169 +1,169 @@
 class Dominos {
 
-    public static double getFoodPrice(String FoodName) {
+    public static double getFoodPrice(String foodName) {
 
         double price = 0.0;
 
-        if (FoodName == "Margherita Pizza") {
+        if (foodName == "Margherita Pizza") {
             price = 199;
 
-        } else if (FoodName == "Peppy Paneer Pizza") {
+        } else if (foodName == "Peppy Paneer Pizza") {
             price = 249;
 
-        } else if (FoodName == "Veg Extravaganza") {
+        } else if (foodName == "Veg Extravaganza") {
             price = 299;
 
-        } else if (FoodName == "Chicken Dominator") {
+        } else if (foodName == "Chicken Dominator") {
             price = 349;
 
-        } else if (FoodName == "Pepperoni Pizza") {
+        } else if (foodName == "Pepperoni Pizza") {
             price = 329;
 
-        } else if (FoodName == "Cheese Burst Pizza") {
+        } else if (foodName == "Cheese Burst Pizza") {
             price = 319;
 
-        } else if (FoodName == "Mexican Green Wave") {
+        } else if (foodName == "Mexican Green Wave") {
             price = 239;
 
-        } else if (FoodName == "Indi Tandoori Paneer") {
+        } else if (foodName == "Indi Tandoori Paneer") {
             price = 279;
 
-        } else if (FoodName == "Chicken Sausage Pizza") {
+        } else if (foodName == "Chicken Sausage Pizza") {
             price = 269;
 
-        } else if (FoodName == "Deluxe Veggie Pizza") {
+        } else if (foodName == "Deluxe Veggie Pizza") {
             price = 259;
 
-        } else if (FoodName == "Farmhouse Pizza") {
+        } else if (foodName == "Farmhouse Pizza") {
             price = 289;
 
-        } else if (FoodName == "Paneer Makhani Pizza") {
+        } else if (foodName == "Paneer Makhani Pizza") {
             price = 279;
 
-        } else if (FoodName == "Veggie Paradise") {
+        } else if (foodName == "Veggie Paradise") {
             price = 219;
 
-        } else if (FoodName == "Chicken Golden Delight") {
+        } else if (foodName == "Chicken Golden Delight") {
             price = 309;
 
-        } else if (FoodName == "Non Veg Supreme") {
+        } else if (foodName == "Non Veg Supreme") {
             price = 359;
 
-        } else if (FoodName == "Cheese Garlic Bread") {
+        } else if (foodName == "Cheese Garlic Bread") {
             price = 129;
 
-        } else if (FoodName == "Stuffed Garlic Bread") {
+        } else if (foodName == "Stuffed Garlic Bread") {
             price = 149;
 
-        } else if (FoodName == "Garlic Breadsticks") {
+        } else if (foodName == "Garlic Breadsticks") {
             price = 109;
 
-        } else if (FoodName == "Taco Mexicana Veg") {
+        } else if (foodName == "Taco Mexicana Veg") {
             price = 159;
 
-        } else if (FoodName == "Taco Mexicana NonVeg") {
+        } else if (foodName == "Taco Mexicana NonVeg") {
             price = 179;
 
-        } else if (FoodName == "Veg Parcel") {
+        } else if (foodName == "Veg Parcel") {
             price = 99;
 
-        } else if (FoodName == "Chicken Parcel") {
+        } else if (foodName == "Chicken Parcel") {
             price = 119;
 
-        } else if (FoodName == "Choco Lava Cake") {
+        } else if (foodName == "Choco Lava Cake") {
             price = 99;
 
-        } else if (FoodName == "Red Velvet Lava") {
+        } else if (foodName == "Red Velvet Lava") {
             price = 119;
 
-        } else if (FoodName == "Butterscotch Mousse Cake") {
+        } else if (foodName == "Butterscotch Mousse Cake") {
             price = 109;
 
-        } else if (FoodName == "Chocolate Brownie") {
+        } else if (foodName == "Chocolate Brownie") {
             price = 89;
 
-        } else if (FoodName == "Coke 500ml") {
+        } else if (foodName == "Coke 500ml") {
             price = 60;
 
-        } else if (FoodName == "Pepsi 500ml") {
+        } else if (foodName == "Pepsi 500ml") {
             price = 60;
 
-        } else if (FoodName == "Sprite 500ml") {
+        } else if (foodName == "Sprite 500ml") {
             price = 60;
 
-        } else if (FoodName == "Fanta 500ml") {
+        } else if (foodName == "Fanta 500ml") {
             price = 60;
 
-        } else if (FoodName == "Mirinda 500ml") {
+        } else if (foodName == "Mirinda 500ml") {
             price = 60;
 
-        } else if (FoodName == "Veg Loaded Pizza") {
+        } else if (foodName == "Veg Loaded Pizza") {
             price = 189;
 
-        } else if (FoodName == "Chicken Loaded Pizza") {
+        } else if (foodName == "Chicken Loaded Pizza") {
             price = 219;
 
-        } else if (FoodName == "Veg Taco") {
+        } else if (foodName == "Veg Taco") {
             price = 99;
 
-        } else if (FoodName == "Chicken Taco") {
+        } else if (foodName == "Chicken Taco") {
             price = 119;
 
-        } else if (FoodName == "Paneer Zingy Parcel") {
+        } else if (foodName == "Paneer Zingy Parcel") {
             price = 109;
 
-        } else if (FoodName == "Chicken Zingy Parcel") {
+        } else if (foodName == "Chicken Zingy Parcel") {
             price = 129;
 
-        } else if (FoodName == "Classic Corn Pizza") {
+        } else if (foodName == "Classic Corn Pizza") {
             price = 199;
 
-        } else if (FoodName == "Double Cheese Pizza") {
+        } else if (foodName == "Double Cheese Pizza") {
             price = 249;
 
-        } else if (FoodName == "BBQ Chicken Pizza") {
+        } else if (foodName == "BBQ Chicken Pizza") {
             price = 329;
 
-        } else if (FoodName == "Cheesy Dip") {
+        } else if (foodName == "Cheesy Dip") {
             price = 30;
 
-        } else if (FoodName == "Tandoori Dip") {
+        } else if (foodName == "Tandoori Dip") {
             price = 30;
 
-        } else if (FoodName == "Peri Peri Dip") {
+        } else if (foodName == "Peri Peri Dip") {
             price = 30;
 
-        } else if (FoodName == "Veg Supreme Pizza") {
+        } else if (foodName == "Veg Supreme Pizza") {
             price = 299;
 
-        } else if (FoodName == "Chicken Supreme Pizza") {
+        } else if (foodName == "Chicken Supreme Pizza") {
             price = 349;
 
-        } else if (FoodName == "Paneer & Onion Pizza") {
+        } else if (foodName == "Paneer & Onion Pizza") {
             price = 229;
 
-        } else if (FoodName == "Capsicum Delight Pizza") {
+        } else if (foodName == "Capsicum Delight Pizza") {
             price = 209;
 
-        } else if (FoodName == "Spicy Chicken Pizza") {
+        } else if (foodName == "Spicy Chicken Pizza") {
             price = 319;
 
-        } else if (FoodName == "Cheese n Corn Pizza") {
+        } else if (foodName == "Cheese n Corn Pizza") {
             price = 219;
 
-        } else if (FoodName == "Veggie Burger Pizza") {
+        } else if (foodName == "Veggie Burger Pizza") {
             price = 239;
 
-        } else if (FoodName == "Chicken Burger Pizza") {
+        } else if (foodName == "Chicken Burger Pizza") {
             price = 279;
 
-        } else if (FoodName == "Italiano Pizza") {
+        } else if (foodName == "Italiano Pizza") {
             price = 299;
 
-        } else if (FoodName == "Spicy Veg Pizza") {
+        } else if (foodName == "Spicy Veg Pizza") {
             price = 219;
 
-        } else if (FoodName == "Classic Cheese Pizza") {
+        } else if (foodName == "Classic Cheese Pizza") {
             price = 199;
 
         } else {
