@@ -1,175 +1,353 @@
-class Zepto {
+class Zepto{
 
-    public static double getFoodPrice(String FoodName) {
+	public static double search(String foodName){
+		double price = 0.0;
 
-        double price = 0.0;
+		if(foodName == "Horlicks500g"){
+			price = 220.00;
+			
+		}else if(foodName == "Boost500g"){
+			price = 210.00;
+			
+		}else if(foodName == "Bournvita500g"){
+			price = 230.00;
+			
+		}else if(foodName == "Complan500g"){
+			price = 240.00;
+			
+		}else if(foodName == "ProteinBar"){
+			price = 60.00;
+			
+		}else if(foodName == "DarkChocolateBar"){
+			price = 120.00;
+			
+		}else if(foodName == "MilkChocolateBar"){
+			price = 50.00;
+			
+		}else if(foodName == "WhiteChocolateBar"){
+			price = 90.00;
+			
+		}else if(foodName == "HazelnutChocolate"){
+			price = 150.00;
+			
+		}else if(foodName == "ChocolateGiftBox"){
+			price = 350.00;
+			
+		}else if(foodName == "SaltedCashewPack"){
+			price = 180.00;
+			
+		}else if(foodName == "RoastedAlmondPack"){
+			price = 200.00;
+			
+		}else if(foodName == "MixedDryFruitsPack"){
+			price = 250.00;
+			
+		}else if(foodName == "Dates500g"){
+			price = 140.00;
+			
+		}else if(foodName == "Raisins500g"){
+			price = 130.00;
+			
+		}else if(foodName == "PeanutButterJar"){
+			price = 160.00;
+			
+		}else if(foodName == "ChocolateSpreadJar"){
+			price = 170.00;
+			
+		}else if(foodName == "StrawberryJamJar"){
+			price = 140.00;
+			
+		}else if(foodName == "HoneyBottle500g"){
+			price = 190.00;
+			
+		}else if(foodName == "MapleSyrupBottle"){
+			price = 220.00;
+			
+		}else if(foodName == "NachoChipsPack"){
+			price = 60.00;
+			
+		}else if(foodName == "TortillaWrapPack"){
+			price = 120.00;
+			
+		}else if(foodName == "BurgerBunsPack"){
+			price = 45.00;
+			
+		}else if(foodName == "HotDogBunsPack"){
+			price = 50.00;
+			
+		}else if(foodName == "FrozenPeas1Kg"){
+			price = 110.00;
+			
+		}else if(foodName == "FrozenSweetCorn1Kg"){
+			price = 120.00;
+			
+		}else if(foodName == "FrozenFrenchFries1Kg"){
+			price = 150.00;
+			
+		}else if(foodName == "FrozenVegPattyPack"){
+			price = 130.00;
+			
+		}else if(foodName == "FrozenChickenNuggetsPack"){
+			price = 220.00;
+			
+		}else if(foodName == "InstantSoupPacket"){
+			price = 25.00;
+			
+		}else if(foodName == "InstantCoffeeSachets"){
+			price = 90.00;
+			
+		}else if(foodName == "GreenCoffeeJar"){
+			price = 240.00;
+			
+		}else if(foodName == "HerbalTeaPack"){
+			price = 150.00;
+			
+		}else if(foodName == "EnergyDrinkCan"){
+			price = 110.00;
+			
+		}else if(foodName == "SodaBottle2L"){
+			price = 95.00;
+			
+		}else if(foodName == "MineralWaterCan20L"){
+			price = 80.00;
+			
+		}else if(foodName == "PaperTowelsPack"){
+			price = 140.00;
+			
+		}else if(foodName == "ToiletPaperRollPack"){
+			price = 160.00;
+			
+		}else if(foodName == "HandWashBottle"){
+			price = 85.00;
+			
+		}else if(foodName == "SanitizerBottle"){
+			price = 70.00;
+			
+		}else if(foodName == "FaceWashTube"){
+			price = 120.00;
+			
+		}else if(foodName == "BodyLotionBottle"){
+			price = 190.00;
+			
+		}else if(foodName == "HairOilBottle"){
+			price = 130.00;
+			
+		}else if(foodName == "DeodorantSpray"){
+			price = 180.00;
+			
+		}else if(foodName == "LaundryLiquid1L"){
+			price = 210.00;
+			
+		}else if(foodName == "FloorCleaner1L"){
+			price = 150.00;
+			
+		}else if(foodName == "GarbageBagsPack"){
+			price = 75.00;
+			
+		}else if(foodName == "AluminiumFoilRoll"){
+			price = 95.00;
+			
+		}else if(foodName == "ClingWrapRoll"){
+			price = 85.00;
+			
+		}else if(foodName == "PlasticStorageContainersSet"){
+			price = 300.00;
+			
+		}else if(foodName == "DishScrubberPack"){
+			price = 40.00;
+			
+		}else if(foodName == "MatchBoxPack"){
+			price = 15.00;
+			
+		}else if(foodName == "CandlePack"){
+			price = 35.00;
+			
+		}else if(foodName == "MosquitoRepellentLiquid"){
+			price = 120.00;
+			
+		}else if(foodName == "RoomFreshenerSpray"){
+			price = 170.00;
+			
+		}else{
+			System.out.println("There is no item found which you have searched");
+		}
 
-        if (FoodName == "Instant Noodles") {
-            price = 49;
+		return price;
+	}
+	
+	public static double search(String foodName, int quantity){
 
-        } else if (FoodName == "Frozen Pizza") {
-            price = 199;
+	double price = 0.0;
 
-        } else if (FoodName == "Frozen Nuggets") {
-            price = 159;
+	if(foodName == "Horlicks500g"){
+		price = 220.00 * quantity;
+		
+	}else if(foodName == "Boost500g"){
+		price = 210.00 * quantity;
+		
+	}else if(foodName == "Bournvita500g"){
+		price = 230.00 * quantity;
+		
+	}else if(foodName == "Complan500g"){
+		price = 240.00 * quantity;
+		
+	}else if(foodName == "ProteinBar"){
+		price = 60.00 * quantity;
+		
+	}else if(foodName == "DarkChocolateBar"){
+		price = 120.00 * quantity;
+		
+	}else if(foodName == "MilkChocolateBar"){
+		price = 50.00 * quantity;
+		
+	}else if(foodName == "WhiteChocolateBar"){
+		price = 90.00 * quantity;
+		
+	}else if(foodName == "HazelnutChocolate"){
+		price = 150.00 * quantity;
+		
+	}else if(foodName == "ChocolateGiftBox"){
+		price = 350.00 * quantity;
+		
+	}else if(foodName == "SaltedCashewPack"){
+		price = 180.00 * quantity;
+		
+	}else if(foodName == "RoastedAlmondPack"){
+		price = 200.00 * quantity;
+		
+	}else if(foodName == "MixedDryFruitsPack"){
+		price = 250.00 * quantity;
+		
+	}else if(foodName == "Dates500g"){
+		price = 140.00 * quantity;
+		
+	}else if(foodName == "Raisins500g"){
+		price = 130.00 * quantity;
+		
+	}else if(foodName == "PeanutButterJar"){
+		price = 160.00 * quantity;
+		
+	}else if(foodName == "ChocolateSpreadJar"){
+		price = 170.00 * quantity;
+		
+	}else if(foodName == "StrawberryJamJar"){
+		price = 140.00 * quantity;
+		
+	}else if(foodName == "HoneyBottle500g"){
+		price = 190.00 * quantity;
+		
+	}else if(foodName == "MapleSyrupBottle"){
+		price = 220.00 * quantity;
+		
+	}else if(foodName == "NachoChipsPack"){
+		price = 60.00 * quantity;
+		
+	}else if(foodName == "TortillaWrapPack"){
+		price = 120.00 * quantity;
+		
+	}else if(foodName == "BurgerBunsPack"){
+		price = 45.00 * quantity;
+		
+	}else if(foodName == "HotDogBunsPack"){
+		price = 50.00 * quantity;
+		
+	}else if(foodName == "FrozenPeas1Kg"){
+		price = 110.00 * quantity;
+		
+	}else if(foodName == "FrozenSweetCorn1Kg"){
+		price = 120.00 * quantity;
+		
+	}else if(foodName == "FrozenFrenchFries1Kg"){
+		price = 150.00 * quantity;
+		
+	}else if(foodName == "FrozenVegPattyPack"){
+		price = 130.00 * quantity;
+		
+	}else if(foodName == "FrozenChickenNuggetsPack"){
+		price = 220.00 * quantity;
+		
+	}else if(foodName == "InstantSoupPacket"){
+		price = 25.00 * quantity;
+		
+	}else if(foodName == "InstantCoffeeSachets"){
+		price = 90.00 * quantity;
+		
+	}else if(foodName == "GreenCoffeeJar"){
+		price = 240.00 * quantity;
+		
+	}else if(foodName == "HerbalTeaPack"){
+		price = 150.00 * quantity;
+		
+	}else if(foodName == "EnergyDrinkCan"){
+		price = 110.00 * quantity;
+		
+	}else if(foodName == "SodaBottle2L"){
+		price = 95.00 * quantity;
+		
+	}else if(foodName == "MineralWaterCan20L"){
+		price = 80.00 * quantity;
+		
+	}else if(foodName == "PaperTowelsPack"){
+		price = 140.00 * quantity;
+		
+	}else if(foodName == "ToiletPaperRollPack"){
+		price = 160.00 * quantity;
+		
+	}else if(foodName == "HandWashBottle"){
+		price = 85.00 * quantity;
+		
+	}else if(foodName == "SanitizerBottle"){
+		price = 70.00 * quantity;
+		
+	}else if(foodName == "FaceWashTube"){
+		price = 120.00 * quantity;
+		
+	}else if(foodName == "BodyLotionBottle"){
+		price = 190.00 * quantity;
+		
+	}else if(foodName == "HairOilBottle"){
+		price = 130.00 * quantity;
+		
+	}else if(foodName == "DeodorantSpray"){
+		price = 180.00 * quantity;
+		
+	}else if(foodName == "LaundryLiquid1L"){
+		price = 210.00 * quantity;
+		
+	}else if(foodName == "FloorCleaner1L"){
+		price = 150.00 * quantity;
+		
+	}else if(foodName == "GarbageBagsPack"){
+		price = 75.00 * quantity;
+		
+	}else if(foodName == "AluminiumFoilRoll"){
+		price = 95.00 * quantity;
+		
+	}else if(foodName == "ClingWrapRoll"){
+		price = 85.00 * quantity;
+		
+	}else if(foodName == "PlasticStorageContainersSet"){
+		price = 300.00 * quantity;
+		
+	}else if(foodName == "DishScrubberPack"){
+		price = 40.00 * quantity;
+		
+	}else if(foodName == "MatchBoxPack"){
+		price = 15.00 * quantity;
+		
+	}else if(foodName == "CandlePack"){
+		price = 35.00 * quantity;
+		
+	}else if(foodName == "MosquitoRepellentLiquid"){
+		price = 120.00 * quantity;
+		
+	}else if(foodName == "RoomFreshenerSpray"){
+		price = 170.00 * quantity;
+		
+	}else{
+		System.out.println("There is no item found which you have searched");
+	}
 
-        } else if (FoodName == "Frozen Fries") {
-            price = 129;
-
-        } else if (FoodName == "Ice Cream Tub") {
-            price = 229;
-
-        } else if (FoodName == "Soft Drink") {
-            price = 39;
-
-        } else if (FoodName == "Energy Drink") {
-            price = 89;
-
-        } else if (FoodName == "Chips Packet") {
-            price = 20;
-
-        } else if (FoodName == "Chocolate Bar") {
-            price = 30;
-
-        } else if (FoodName == "Protein Bar") {
-            price = 79;
-
-        } else if (FoodName == "Peanut Butter") {
-            price = 149;
-
-        } else if (FoodName == "Bread Loaf") {
-            price = 40;
-
-        } else if (FoodName == "Milk Packet") {
-            price = 30;
-
-        } else if (FoodName == "Butter Pack") {
-            price = 55;
-
-        } else if (FoodName == "Cheese Slice") {
-            price = 90;
-
-        } else if (FoodName == "Egg Tray") {
-            price = 75;
-
-        } else if (FoodName == "Paneer Block") {
-            price = 110;
-
-        } else if (FoodName == "Chicken Pack") {
-            price = 220;
-
-        } else if (FoodName == "Mutton Pack") {
-            price = 350;
-
-        } else if (FoodName == "Fish Pack") {
-            price = 280;
-
-        } else if (FoodName == "Rice Bag") {
-            price = 60;
-
-        } else if (FoodName == "Wheat Flour") {
-            price = 50;
-
-        } else if (FoodName == "Sugar Pack") {
-            price = 45;
-
-        } else if (FoodName == "Salt Packet") {
-            price = 20;
-
-        } else if (FoodName == "Tea Powder") {
-            price = 120;
-
-        } else if (FoodName == "Coffee Powder") {
-            price = 150;
-
-        } else if (FoodName == "Biscuit Pack") {
-            price = 25;
-
-        } else if (FoodName == "Cake Roll") {
-            price = 35;
-
-        } else if (FoodName == "Ice Cream Cup") {
-            price = 49;
-
-        } else if (FoodName == "Frozen Paratha") {
-            price = 99;
-
-        } else if (FoodName == "Ketchup Bottle") {
-            price = 60;
-
-        } else if (FoodName == "Mayonnaise Bottle") {
-            price = 90;
-
-        } else if (FoodName == "Pickle Jar") {
-            price = 80;
-
-        } else if (FoodName == "Cornflakes Box") {
-            price = 140;
-
-        } else if (FoodName == "Oats Pack") {
-            price = 120;
-
-        } else if (FoodName == "Pasta Pack") {
-            price = 70;
-
-        } else if (FoodName == "Sauce Bottle") {
-            price = 65;
-
-        } else if (FoodName == "Jam Bottle") {
-            price = 85;
-
-        } else if (FoodName == "Honey Bottle") {
-            price = 160;
-
-        } else if (FoodName == "Dry Fruits Mix") {
-            price = 300;
-
-        } else if (FoodName == "Almond Pack") {
-            price = 280;
-
-        } else if (FoodName == "Cashew Pack") {
-            price = 260;
-
-        } else if (FoodName == "Raisin Pack") {
-            price = 120;
-
-        } else if (FoodName == "Dates Pack") {
-            price = 150;
-
-        } else if (FoodName == "Frozen Veg Mix") {
-            price = 130;
-
-        } else if (FoodName == "Green Peas Pack") {
-            price = 90;
-
-        } else if (FoodName == "Sweet Corn Pack") {
-            price = 95;
-
-        } else if (FoodName == "Tomato Sauce") {
-            price = 60;
-
-        } else if (FoodName == "Cereal Bar") {
-            price = 40;
-
-        } else if (FoodName == "Energy Bar") {
-            price = 50;
-
-        } else if (FoodName == "Popcorn Pack") {
-            price = 35;
-
-        } else if (FoodName == "Nachos Pack") {
-            price = 45;
-
-        } else if (FoodName == "Cup Noodles") {
-            price = 55;
-
-        } else if (FoodName == "Frozen Momos") {
-            price = 140;
-
-        } else {
-            System.out.println("The Food Name is Not Found.");
-        }
-
-        return price;
-    }
+	return price;
+}
 }

@@ -1,172 +1,353 @@
-class UberEats {
+class UberEats{
 
-    public static double getFoodPrice(String FoodName) {
+	public static double search(String foodName){
+		double price = 0.0;
 
-        double price = 0.0;
+		if(foodName == "PlainDosa"){
+			price = 70.00;
+			 
+		}else if(foodName == "OnionDosa"){
+			price = 85.00;
+			 
+		}else if(foodName == "RavaDosa"){
+			price = 95.00;
+			 
+		}else if(foodName == "SetDosa"){
+			price = 80.00;
+			 
+		}else if(foodName == "NeerDosa"){
+			price = 90.00;
+			 
+		}else if(foodName == "AkkiRoti"){
+			price = 60.00;
+			 
+		}else if(foodName == "RagiMudde"){
+			price = 75.00;
+			 
+		}else if(foodName == "PlainRice"){
+			price = 50.00;
+			 
+		}else if(foodName == "JeeraRice"){
+			price = 90.00;
+			 
+		}else if(foodName == "GheeRice"){
+			price = 110.00;
+			 
+		}else if(foodName == "VegPulav"){
+			price = 120.00;
+			 
+		}else if(foodName == "MushroomPulav"){
+			price = 140.00;
+			 
+		}else if(foodName == "PaneerPulav"){
+			price = 150.00;
+			 
+		}else if(foodName == "ChickenPulav"){
+			price = 170.00;
+			 
+		}else if(foodName == "MuttonPulav"){
+			price = 220.00;
+			 
+		}else if(foodName == "CurdVada"){
+			price = 60.00;
+			 
+		}else if(foodName == "OnionUttapam"){
+			price = 95.00;
+			 
+		}else if(foodName == "TomatoUttapam"){
+			price = 90.00;
+			 
+		}else if(foodName == "MixVegUttapam"){
+			price = 100.00;
+			 
+		}else if(foodName == "PlainUttapam"){
+			price = 75.00;
+			 
+		}else if(foodName == "BreadButter"){
+			price = 40.00;
+			 
+		}else if(foodName == "BreadJam"){
+			price = 45.00;
+			 
+		}else if(foodName == "VegOmelette"){
+			price = 70.00;
+			 
+		}else if(foodName == "BoiledEggs"){
+			price = 30.00;
+			 
+		}else if(foodName == "ScrambledEggs"){
+			price = 80.00;
+			 
+		}else if(foodName == "PlainParatha"){
+			price = 40.00;
+			 
+		}else if(foodName == "AlooParatha"){
+			price = 60.00;
+			 
+		}else if(foodName == "GobiParatha"){
+			price = 65.00;
+			 
+		}else if(foodName == "PaneerParatha"){
+			price = 75.00;
+			 
+		}else if(foodName == "ChickenParatha"){
+			price = 90.00;
+			 
+		}else if(foodName == "VegetableSalad"){
+			price = 50.00;
+			 
+		}else if(foodName == "FruitSalad"){
+			price = 70.00;
+			 
+		}else if(foodName == "PlainMaggi"){
+			price = 40.00;
+			 
+		}else if(foodName == "EggMaggi"){
+			price = 60.00;
+			 
+		}else if(foodName == "VegMaggi"){
+			price = 55.00;
+			 
+		}else if(foodName == "ChickenMaggi"){
+			price = 75.00;
+			 
+		}else if(foodName == "TomatoKetchupPack"){
+			price = 5.00;
+			 
+		}else if(foodName == "MayonnaisePack"){
+			price = 10.00;
+			 
+		}else if(foodName == "PlainCurd"){
+			price = 25.00;
+			 
+		}else if(foodName == "GheeRoastDosa"){
+			price = 110.00;
+			 
+		}else if(foodName == "MasalaUttapam"){
+			price = 105.00;
+			 
+		}else if(foodName == "VegCutlet"){
+			price = 35.00;
+			 
+		}else if(foodName == "ChickenCutlet"){
+			price = 55.00;
+			 
+		}else if(foodName == "PlainIdiyappam"){
+			price = 70.00;
+			 
+		}else if(foodName == "EggIdiyappam"){
+			price = 90.00;
+			 
+		}else if(foodName == "VegStew"){
+			price = 120.00;
+			 
+		}else if(foodName == "ChickenStew"){
+			price = 160.00;
+			 
+		}else if(foodName == "PlainKhakra"){
+			price = 20.00;
+			 
+		}else if(foodName == "MasalaKhakra"){
+			price = 25.00;
+			 
+		}else if(foodName == "RoastedPapad"){
+			price = 15.00;
+			 
+		}else if(foodName == "FriedPapad"){
+			price = 20.00;
+			 
+		}else if(foodName == "SimpleDalRice"){
+			price = 95.00;
+			 
+		}else if(foodName == "VegetableUpkari"){
+			price = 85.00;
+			 
+		}else if(foodName == "PlainChapatiMeal"){
+			price = 110.00;
+			 
+		}else if(foodName == "MiniTiffinCombo"){
+			price = 130.00;
+			 
+		}else{
+			System.out.println("There is no food found which you have searched");
+		}
 
-        if (FoodName == "Grilled Sandwich") {
-            price = 149;
+		 return price;
+	}
+	
+	public static double search(String foodName, int quantity){
 
-        } else if (FoodName == "Club Sandwich") {
-            price = 179;
+	double price = 0.0;
 
-        } else if (FoodName == "Veg Burger") {
-            price = 99;
+	if(foodName == "PlainDosa"){
+		price = 70.00 * quantity;
+		 
+	}else if(foodName == "OnionDosa"){
+		price = 85.00 * quantity;
+		 
+	}else if(foodName == "RavaDosa"){
+		price = 95.00 * quantity;
+		 
+	}else if(foodName == "SetDosa"){
+		price = 80.00 * quantity;
+		 
+	}else if(foodName == "NeerDosa"){
+		price = 90.00 * quantity;
+		 
+	}else if(foodName == "AkkiRoti"){
+		price = 60.00 * quantity;
+		 
+	}else if(foodName == "RagiMudde"){
+		price = 75.00 * quantity;
+		 
+	}else if(foodName == "PlainRice"){
+		price = 50.00 * quantity;
+		 
+	}else if(foodName == "JeeraRice"){
+		price = 90.00 * quantity;
+		 
+	}else if(foodName == "GheeRice"){
+		price = 110.00 * quantity;
+		 
+	}else if(foodName == "VegPulav"){
+		price = 120.00 * quantity;
+		 
+	}else if(foodName == "MushroomPulav"){
+		price = 140.00 * quantity;
+		 
+	}else if(foodName == "PaneerPulav"){
+		price = 150.00 * quantity;
+		 
+	}else if(foodName == "ChickenPulav"){
+		price = 170.00 * quantity;
+		 
+	}else if(foodName == "MuttonPulav"){
+		price = 220.00 * quantity;
+		 
+	}else if(foodName == "CurdVada"){
+		price = 60.00 * quantity;
+		 
+	}else if(foodName == "OnionUttapam"){
+		price = 95.00 * quantity;
+		 
+	}else if(foodName == "TomatoUttapam"){
+		price = 90.00 * quantity;
+		 
+	}else if(foodName == "MixVegUttapam"){
+		price = 100.00 * quantity;
+		 
+	}else if(foodName == "PlainUttapam"){
+		price = 75.00 * quantity;
+		 
+	}else if(foodName == "BreadButter"){
+		price = 40.00 * quantity;
+		 
+	}else if(foodName == "BreadJam"){
+		price = 45.00 * quantity;
+		 
+	}else if(foodName == "VegOmelette"){
+		price = 70.00 * quantity;
+		 
+	}else if(foodName == "BoiledEggs"){
+		price = 30.00 * quantity;
+		 
+	}else if(foodName == "ScrambledEggs"){
+		price = 80.00 * quantity;
+		 
+	}else if(foodName == "PlainParatha"){
+		price = 40.00 * quantity;
+		 
+	}else if(foodName == "AlooParatha"){
+		price = 60.00 * quantity;
+		 
+	}else if(foodName == "GobiParatha"){
+		price = 65.00 * quantity;
+		 
+	}else if(foodName == "PaneerParatha"){
+		price = 75.00 * quantity;
+		 
+	}else if(foodName == "ChickenParatha"){
+		price = 90.00 * quantity;
+		 
+	}else if(foodName == "VegetableSalad"){
+		price = 50.00 * quantity;
+		 
+	}else if(foodName == "FruitSalad"){
+		price = 70.00 * quantity;
+		 
+	}else if(foodName == "PlainMaggi"){
+		price = 40.00 * quantity;
+		 
+	}else if(foodName == "EggMaggi"){
+		price = 60.00 * quantity;
+		 
+	}else if(foodName == "VegMaggi"){
+		price = 55.00 * quantity;
+		 
+	}else if(foodName == "ChickenMaggi"){
+		price = 75.00 * quantity;
+		 
+	}else if(foodName == "TomatoKetchupPack"){
+		price = 5.00 * quantity;
+		 
+	}else if(foodName == "MayonnaisePack"){
+		price = 10.00 * quantity;
+		 
+	}else if(foodName == "PlainCurd"){
+		price = 25.00 * quantity;
+		 
+	}else if(foodName == "GheeRoastDosa"){
+		price = 110.00 * quantity;
+		 
+	}else if(foodName == "MasalaUttapam"){
+		price = 105.00 * quantity;
+		 
+	}else if(foodName == "VegCutlet"){
+		price = 35.00 * quantity;
+		 
+	}else if(foodName == "ChickenCutlet"){
+		price = 55.00 * quantity;
+		 
+	}else if(foodName == "PlainIdiyappam"){
+		price = 70.00 * quantity;
+		 
+	}else if(foodName == "EggIdiyappam"){
+		price = 90.00 * quantity;
+		 
+	}else if(foodName == "VegStew"){
+		price = 120.00 * quantity;
+		 
+	}else if(foodName == "ChickenStew"){
+		price = 160.00 * quantity;
+		 
+	}else if(foodName == "PlainKhakra"){
+		price = 20.00 * quantity;
+		 
+	}else if(foodName == "MasalaKhakra"){
+		price = 25.00 * quantity;
+		 
+	}else if(foodName == "RoastedPapad"){
+		price = 15.00 * quantity;
+		 
+	}else if(foodName == "FriedPapad"){
+		price = 20.00 * quantity;
+		 
+	}else if(foodName == "SimpleDalRice"){
+		price = 95.00 * quantity;
+		 
+	}else if(foodName == "VegetableUpkari"){
+		price = 85.00 * quantity;
+		 
+	}else if(foodName == "PlainChapatiMeal"){
+		price = 110.00 * quantity;
+		 
+	}else if(foodName == "MiniTiffinCombo"){
+		price = 130.00 * quantity;
+		 
+	}else{
+		System.out.println("There is no food found which you have searched");
+	}
 
-        } else if (FoodName == "Chicken Burger") {
-            price = 129;
-
-        } else if (FoodName == "Double Patty Burger") {
-            price = 169;
-
-        } else if (FoodName == "Veg Pizza Slice") {
-            price = 99;
-
-        } else if (FoodName == "Chicken Pizza Slice") {
-            price = 129;
-
-        } else if (FoodName == "Pepperoni Pizza Slice") {
-            price = 149;
-
-        } else if (FoodName == "French Fries") {
-            price = 79;
-
-        } else if (FoodName == "Peri Peri Fries") {
-            price = 99;
-
-        } else if (FoodName == "Cheese Fries") {
-            price = 109;
-
-        } else if (FoodName == "Veg Wrap") {
-            price = 119;
-
-        } else if (FoodName == "Chicken Wrap") {
-            price = 159;
-
-        } else if (FoodName == "Veg Noodles") {
-            price = 149;
-
-        } else if (FoodName == "Chicken Noodles") {
-            price = 189;
-
-        } else if (FoodName == "Veg Fried Rice") {
-            price = 159;
-
-        } else if (FoodName == "Chicken Fried Rice") {
-            price = 199;
-
-        } else if (FoodName == "Paneer Butter Masala") {
-            price = 209;
-
-        } else if (FoodName == "Butter Chicken") {
-            price = 259;
-
-        } else if (FoodName == "Tandoori Chicken") {
-            price = 299;
-
-        } else if (FoodName == "Veg Manchurian") {
-            price = 169;
-
-        } else if (FoodName == "Chicken Manchurian") {
-            price = 219;
-
-        } else if (FoodName == "Spring Roll Veg") {
-            price = 119;
-
-        } else if (FoodName == "Spring Roll Chicken") {
-            price = 159;
-
-        } else if (FoodName == "Chocolate Cake") {
-            price = 99;
-
-        } else if (FoodName == "Brownie") {
-            price = 79;
-
-        } else if (FoodName == "Cupcake") {
-            price = 69;
-
-        } else if (FoodName == "Donut") {
-            price = 59;
-
-        } else if (FoodName == "Ice Cream Cup") {
-            price = 49;
-
-        } else if (FoodName == "Milkshake") {
-            price = 109;
-
-        } else if (FoodName == "Cold Coffee") {
-            price = 99;
-
-        } else if (FoodName == "Hot Coffee") {
-            price = 59;
-
-        } else if (FoodName == "Tea") {
-            price = 30;
-
-        } else if (FoodName == "Lemon Juice") {
-            price = 49;
-
-        } else if (FoodName == "Fresh Orange Juice") {
-            price = 80;
-
-        } else if (FoodName == "Veg Thali") {
-            price = 169;
-
-        } else if (FoodName == "Chicken Thali") {
-            price = 249;
-
-        } else if (FoodName == "Paneer Biryani") {
-            price = 199;
-
-        } else if (FoodName == "Chicken Biryani") {
-            price = 249;
-
-        } else if (FoodName == "Mutton Biryani") {
-            price = 299;
-
-        } else if (FoodName == "Chapati") {
-            price = 15;
-
-        } else if (FoodName == "Butter Naan") {
-            price = 35;
-
-        } else if (FoodName == "Garlic Naan") {
-            price = 45;
-
-        } else if (FoodName == "Jeera Rice") {
-            price = 109;
-
-        } else if (FoodName == "Dal Fry") {
-            price = 139;
-
-        } else if (FoodName == "Paneer Curry") {
-            price = 209;
-
-        } else if (FoodName == "Chicken Curry") {
-            price = 259;
-
-        } else if (FoodName == "Veg Combo") {
-            price = 179;
-
-        } else if (FoodName == "Non Veg Combo") {
-            price = 229;
-
-        } else if (FoodName == "Samosa") {
-            price = 20;
-
-        } else if (FoodName == "Kachori") {
-            price = 25;
-
-        } else if (FoodName == "Pani Puri") {
-            price = 40;
-
-        } else if (FoodName == "Bhel Puri") {
-            price = 50;
-
-        } else {
-            System.out.println("The Food Name is Not Found.");
-        }
-
-        return price;
-    }
+	return price;
+}
 }

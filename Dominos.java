@@ -1,175 +1,348 @@
-class Dominos {
+class Dominos{
 
-    public static double getFoodPrice(String foodName) {
+	public static double search(String foodName){
+		double price = 0.0;
 
-        double price = 0.0;
+		if(foodName == "VegLoadedPizza"){
+			price = 299.00;
+			  
+		}else if(foodName == "CheeseBurstPizza"){
+			price = 349.00;
+			  
+		}else if(foodName == "PepperoniPizza"){
+			price = 399.00;
+			  
+		}else if(foodName == "ChickenDominatoPizza"){
+			price = 379.00;
+			  
+		}else if(foodName == "IndiTandooriPaneerPizza"){
+			price = 369.00;
+			  
+		}else if(foodName == "VeggieParadisePizza"){
+			price = 329.00;
+			  
+		}else if(foodName == "ChickenGoldenDelightPizza"){
+			price = 389.00;
+			  
+		}else if(foodName == "NonVegSupremePizza"){
+			price = 419.00;
+			  
+		}else if(foodName == "PaneerZingyPizza"){
+			price = 359.00;
+			  
+		}else if(foodName == "ChickenFiestaPizza"){
+			price = 399.00;
+			  
+		}else if(foodName == "VegExtravaganzaPizza"){
+			price = 349.00;
+			  
+		}else if(foodName == "ChickenPepperPizza"){
+			price = 389.00;
+			  
+		}else if(foodName == "PaneerOnionPizza"){
+			price = 319.00;
+			  
+		}else if(foodName == "CapsicumCornPizza"){
+			price = 299.00;
+			  
+		}else if(foodName == "DoubleCheesePizza"){
+			price = 359.00;
+			  
+		}else if(foodName == "SpicyTripleChickenPizza"){
+			price = 429.00;
+			  
+		}else if(foodName == "VeggieMaxPizza"){
+			price = 339.00;
+			  
+		}else if(foodName == "ChickenBBQPizza"){
+			price = 409.00;
+			  
+		}else if(foodName == "PaneerMushroomPizza"){
+			price = 349.00;
+			  
+		}else if(foodName == "CornCheesePizza"){
+			price = 309.00;
+			  
+		}else if(foodName == "GarlicBreadsticks"){
+			price = 149.00;
+			  
+		}else if(foodName == "StuffedGarlicBreadWithCheese"){
+			price = 199.00;
+			  
+		}else if(foodName == "TacoMexicanaVeg"){
+			price = 179.00;
+			  
+		}else if(foodName == "TacoMexicanaNonVeg"){
+			price = 199.00;
+			  
+		}else if(foodName == "PotatoWedges"){
+			price = 129.00;
+			  
+		}else if(foodName == "ChickenParcel"){
+			price = 119.00;
+			  
+		}else if(foodName == "VegParcel"){
+			price = 99.00;
+			  
+		}else if(foodName == "ChickenDominatorsSide"){
+			price = 229.00;
+			  
+		}else if(foodName == "CheesyDipCup"){
+			price = 35.00;
+			  
+		}else if(foodName == "TandooriDipCup"){
+			price = 35.00;
+			  
+		}else if(foodName == "ChocoLavaCakeDominos"){
+			price = 109.00;
+			  
+		}else if(foodName == "ButterscotchMousseCake"){
+			price = 119.00;
+			  
+		}else if(foodName == "NewYorkCheesecake"){
+			price = 129.00;
+			  
+		}else if(foodName == "ChocolateBrownieFantasy"){
+			price = 139.00;
+			  
+		}else if(foodName == "Pepsi500ml"){
+			price = 60.00;
+			  
+		}else if(foodName == "7Up500ml"){
+			price = 60.00;
+			  
+		}else if(foodName == "Mirinda500ml"){
+			price = 60.00;
+			  
+		}else if(foodName == "MountainDew500ml"){
+			price = 60.00;
+			  
+		}else if(foodName == "LiptonIceTea"){
+			price = 70.00;
+			  
+		}else if(foodName == "PaneerStuffedCrustPizza"){
+			price = 399.00;
+			  
+		}else if(foodName == "ChickenStuffedCrustPizza"){
+			price = 429.00;
+			  
+		}else if(foodName == "CheeseVolcanoPizza"){
+			price = 449.00;
+			  
+		}else if(foodName == "MexicanGreenWavePizza"){
+			price = 339.00;
+			  
+		}else if(foodName == "DeluxeVeggiePizza"){
+			price = 349.00;
+			  
+		}else if(foodName == "PepperBarbecueChickenPizza"){
+			price = 399.00;
+			  
+		}else if(foodName == "ChickenSausagePizza"){
+			price = 379.00;
+			  
+		}else if(foodName == "VegDoubleCheeseMarblePizza"){
+			price = 369.00;
+			  
+		}else if(foodName == "CheeseNLoadedPizza"){
+			price = 289.00;
+			  
+		}else if(foodName == "ChickenNLoadedPizza"){
+			price = 309.00;
+			  
+		}else if(foodName == "VegBurgerPizza"){
+			price = 119.00;
+			  
+		}else if(foodName == "ChickenBurgerPizza"){
+			price = 139.00;
+			  
+		}else if(foodName == "VegPastaItalianoWhite"){
+			price = 149.00;
+			  
+		}else if(foodName == "NonVegPastaItalianoRed"){
+			price = 169.00;
+			  
+		}else if(foodName == "PaneerZestyPizza"){
+			price = 359.00;
+			  
+		}else{
+			System.out.println("There is no food found which you have searched");
+		}
 
-        if (foodName == "Margherita Pizza") {
-            price = 199;
+		return price;
+	}
+	
+	
+	public static double search(String foodName, int quantity){
 
-        } else if (foodName == "Peppy Paneer Pizza") {
-            price = 249;
+	double price = 0.0;
 
-        } else if (foodName == "Veg Extravaganza") {
-            price = 299;
+	if(foodName == "VegLoadedPizza"){
+		price = 299.00 * quantity;
+		  
+	}else if(foodName == "CheeseBurstPizza"){
+		price = 349.00 * quantity;
+		  
+	}else if(foodName == "PepperoniPizza"){
+		price = 399.00 * quantity;
+		  
+	}else if(foodName == "ChickenDominatoPizza"){
+		price = 379.00 * quantity;
+		  
+	}else if(foodName == "IndiTandooriPaneerPizza"){
+		price = 369.00 * quantity;
+		  
+	}else if(foodName == "VeggieParadisePizza"){
+		price = 329.00 * quantity;
+		  
+	}else if(foodName == "ChickenGoldenDelightPizza"){
+		price = 389.00 * quantity;
+		  
+	}else if(foodName == "NonVegSupremePizza"){
+		price = 419.00 * quantity;
+		  
+	}else if(foodName == "PaneerZingyPizza"){
+		price = 359.00 * quantity;
+		  
+	}else if(foodName == "ChickenFiestaPizza"){
+		price = 399.00 * quantity;
+		  
+	}else if(foodName == "VegExtravaganzaPizza"){
+		price = 349.00 * quantity;
+		  
+	}else if(foodName == "ChickenPepperPizza"){
+		price = 389.00 * quantity;
+		  
+	}else if(foodName == "PaneerOnionPizza"){
+		price = 319.00 * quantity;
+		  
+	}else if(foodName == "CapsicumCornPizza"){
+		price = 299.00 * quantity;
+		  
+	}else if(foodName == "DoubleCheesePizza"){
+		price = 359.00 * quantity;
+		  
+	}else if(foodName == "SpicyTripleChickenPizza"){
+		price = 429.00 * quantity;
+		  
+	}else if(foodName == "VeggieMaxPizza"){
+		price = 339.00 * quantity;
+		  
+	}else if(foodName == "ChickenBBQPizza"){
+		price = 409.00 * quantity;
+		  
+	}else if(foodName == "PaneerMushroomPizza"){
+		price = 349.00 * quantity;
+		  
+	}else if(foodName == "CornCheesePizza"){
+		price = 309.00 * quantity;
+		  
+	}else if(foodName == "GarlicBreadsticks"){
+		price = 149.00 * quantity;
+		  
+	}else if(foodName == "StuffedGarlicBreadWithCheese"){
+		price = 199.00 * quantity;
+		  
+	}else if(foodName == "TacoMexicanaVeg"){
+		price = 179.00 * quantity;
+		  
+	}else if(foodName == "TacoMexicanaNonVeg"){
+		price = 199.00 * quantity;
+		  
+	}else if(foodName == "PotatoWedges"){
+		price = 129.00 * quantity;
+		  
+	}else if(foodName == "ChickenParcel"){
+		price = 119.00 * quantity;
+		  
+	}else if(foodName == "VegParcel"){
+		price = 99.00 * quantity;
+		  
+	}else if(foodName == "ChickenDominatorsSide"){
+		price = 229.00 * quantity;
+		  
+	}else if(foodName == "CheesyDipCup"){
+		price = 35.00 * quantity;
+		  
+	}else if(foodName == "TandooriDipCup"){
+		price = 35.00 * quantity;
+		  
+	}else if(foodName == "ChocoLavaCakeDominos"){
+		price = 109.00 * quantity;
+		  
+	}else if(foodName == "ButterscotchMousseCake"){
+		price = 119.00 * quantity;
+		  
+	}else if(foodName == "NewYorkCheesecake"){
+		price = 129.00 * quantity;
+		  
+	}else if(foodName == "ChocolateBrownieFantasy"){
+		price = 139.00 * quantity;
+		  
+	}else if(foodName == "Pepsi500ml"){
+		price = 60.00 * quantity;
+		  
+	}else if(foodName == "7Up500ml"){
+		price = 60.00 * quantity;
+		  
+	}else if(foodName == "Mirinda500ml"){
+		price = 60.00 * quantity;
+		  
+	}else if(foodName == "MountainDew500ml"){
+		price = 60.00 * quantity;
+		  
+	}else if(foodName == "LiptonIceTea"){
+		price = 70.00 * quantity;
+		  
+	}else if(foodName == "PaneerStuffedCrustPizza"){
+		price = 399.00 * quantity;
+		  
+	}else if(foodName == "ChickenStuffedCrustPizza"){
+		price = 429.00 * quantity;
+		  
+	}else if(foodName == "CheeseVolcanoPizza"){
+		price = 449.00 * quantity;
+		  
+	}else if(foodName == "MexicanGreenWavePizza"){
+		price = 339.00 * quantity;
+		  
+	}else if(foodName == "DeluxeVeggiePizza"){
+		price = 349.00 * quantity;
+		  
+	}else if(foodName == "PepperBarbecueChickenPizza"){
+		price = 399.00 * quantity;
+		  
+	}else if(foodName == "ChickenSausagePizza"){
+		price = 379.00 * quantity;
+		  
+	}else if(foodName == "VegDoubleCheeseMarblePizza"){
+		price = 369.00 * quantity;
+		  
+	}else if(foodName == "CheeseNLoadedPizza"){
+		price = 289.00 * quantity;
+		  
+	}else if(foodName == "ChickenNLoadedPizza"){
+		price = 309.00 * quantity;
+		  
+	}else if(foodName == "VegBurgerPizza"){
+		price = 119.00 * quantity;
+		  
+	}else if(foodName == "ChickenBurgerPizza"){
+		price = 139.00 * quantity;
+		  
+	}else if(foodName == "VegPastaItalianoWhite"){
+		price = 149.00 * quantity;
+		  
+	}else if(foodName == "NonVegPastaItalianoRed"){
+		price = 169.00 * quantity;
+		  
+	}else if(foodName == "PaneerZestyPizza"){
+		price = 359.00 * quantity;
+		  
+	}else{
+		System.out.println("There is no food found which you have searched");
+	}
 
-        } else if (foodName == "Chicken Dominator") {
-            price = 349;
-
-        } else if (foodName == "Pepperoni Pizza") {
-            price = 329;
-
-        } else if (foodName == "Cheese Burst Pizza") {
-            price = 319;
-
-        } else if (foodName == "Mexican Green Wave") {
-            price = 239;
-
-        } else if (foodName == "Indi Tandoori Paneer") {
-            price = 279;
-
-        } else if (foodName == "Chicken Sausage Pizza") {
-            price = 269;
-
-        } else if (foodName == "Deluxe Veggie Pizza") {
-            price = 259;
-
-        } else if (foodName == "Farmhouse Pizza") {
-            price = 289;
-
-        } else if (foodName == "Paneer Makhani Pizza") {
-            price = 279;
-
-        } else if (foodName == "Veggie Paradise") {
-            price = 219;
-
-        } else if (foodName == "Chicken Golden Delight") {
-            price = 309;
-
-        } else if (foodName == "Non Veg Supreme") {
-            price = 359;
-
-        } else if (foodName == "Cheese Garlic Bread") {
-            price = 129;
-
-        } else if (foodName == "Stuffed Garlic Bread") {
-            price = 149;
-
-        } else if (foodName == "Garlic Breadsticks") {
-            price = 109;
-
-        } else if (foodName == "Taco Mexicana Veg") {
-            price = 159;
-
-        } else if (foodName == "Taco Mexicana NonVeg") {
-            price = 179;
-
-        } else if (foodName == "Veg Parcel") {
-            price = 99;
-
-        } else if (foodName == "Chicken Parcel") {
-            price = 119;
-
-        } else if (foodName == "Choco Lava Cake") {
-            price = 99;
-
-        } else if (foodName == "Red Velvet Lava") {
-            price = 119;
-
-        } else if (foodName == "Butterscotch Mousse Cake") {
-            price = 109;
-
-        } else if (foodName == "Chocolate Brownie") {
-            price = 89;
-
-        } else if (foodName == "Coke 500ml") {
-            price = 60;
-
-        } else if (foodName == "Pepsi 500ml") {
-            price = 60;
-
-        } else if (foodName == "Sprite 500ml") {
-            price = 60;
-
-        } else if (foodName == "Fanta 500ml") {
-            price = 60;
-
-        } else if (foodName == "Mirinda 500ml") {
-            price = 60;
-
-        } else if (foodName == "Veg Loaded Pizza") {
-            price = 189;
-
-        } else if (foodName == "Chicken Loaded Pizza") {
-            price = 219;
-
-        } else if (foodName == "Veg Taco") {
-            price = 99;
-
-        } else if (foodName == "Chicken Taco") {
-            price = 119;
-
-        } else if (foodName == "Paneer Zingy Parcel") {
-            price = 109;
-
-        } else if (foodName == "Chicken Zingy Parcel") {
-            price = 129;
-
-        } else if (foodName == "Classic Corn Pizza") {
-            price = 199;
-
-        } else if (foodName == "Double Cheese Pizza") {
-            price = 249;
-
-        } else if (foodName == "BBQ Chicken Pizza") {
-            price = 329;
-
-        } else if (foodName == "Cheesy Dip") {
-            price = 30;
-
-        } else if (foodName == "Tandoori Dip") {
-            price = 30;
-
-        } else if (foodName == "Peri Peri Dip") {
-            price = 30;
-
-        } else if (foodName == "Veg Supreme Pizza") {
-            price = 299;
-
-        } else if (foodName == "Chicken Supreme Pizza") {
-            price = 349;
-
-        } else if (foodName == "Paneer & Onion Pizza") {
-            price = 229;
-
-        } else if (foodName == "Capsicum Delight Pizza") {
-            price = 209;
-
-        } else if (foodName == "Spicy Chicken Pizza") {
-            price = 319;
-
-        } else if (foodName == "Cheese n Corn Pizza") {
-            price = 219;
-
-        } else if (foodName == "Veggie Burger Pizza") {
-            price = 239;
-
-        } else if (foodName == "Chicken Burger Pizza") {
-            price = 279;
-
-        } else if (foodName == "Italiano Pizza") {
-            price = 299;
-
-        } else if (foodName == "Spicy Veg Pizza") {
-            price = 219;
-
-        } else if (foodName == "Classic Cheese Pizza") {
-            price = 199;
-
-        } else {
-            System.out.println("The Food Name is Not Found.");
-        }
-
-        return price;
-    }
+	return price;
+}
 }
