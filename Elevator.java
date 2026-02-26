@@ -8,15 +8,7 @@ class Elevator {
     static double speed;
     static boolean emergencyAlarm;
 
-    static boolean createElevator(
-            String eBrand,
-            int eCapacity,
-            int eMaxFloor,
-            String eType,
-            String ePowerType,
-            double eSpeed,
-            boolean eEmergencyAlarm) {
-
+    static boolean createElevator(String eBrand,int eCapacity,int eMaxFloor,String eType,String ePowerType,double eSpeed,boolean eEmergencyAlarm) {
         boolean isElevatorCreated = false;
         boolean isBrand = false;
         boolean isCapacity = false;
