@@ -1,2 +1,0 @@
-class CourierDelivery extends DeliveryService {
-}

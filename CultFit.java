@@ -1,1 +1,0 @@
-class CultFit extends FitnessApp { }

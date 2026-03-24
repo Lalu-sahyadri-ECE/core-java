@@ -1,1 +1,0 @@
-class GoogleMapsApp extends NavigationService { }

@@ -1,1 +1,0 @@
-class IRCTCBooking extends TicketService { }

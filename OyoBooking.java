@@ -1,1 +1,0 @@
-class OyoBooking extends HotelService { }

@@ -1,1 +1,0 @@
-class NetflixApp extends StreamingService { }

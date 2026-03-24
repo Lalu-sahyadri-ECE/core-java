@@ -1,2 +1,0 @@
-class SBIATM extends ATMService {
-}

@@ -1,2 +1,0 @@
-class CreditCardPayment extends PaymentService {
-}
